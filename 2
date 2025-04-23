@@ -2,7 +2,7 @@
 if game:IsLoaded() then
     print("Game is already loaded, executing script.")
 else
-    game.Loaded:Wait()
+    game.Loaded:Wait(1,2)
 end
 
 local GameP = game.PlaceId
@@ -18,9 +18,9 @@ end
 
 -- Initial notifications
 sendNotification("Notification", "Checking")
-wait(0.1)
+wait(1.1)
 sendNotification("Notification", "Check Place Id..")
-wait(0.1)
+wait(1.2)
 
 -- Game specific logic
 local url
